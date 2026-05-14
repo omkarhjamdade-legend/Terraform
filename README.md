@@ -1,4 +1,4 @@
 # Terraform
 My Terraform repository
 <br>
-This repo is to practice IaC with version control
+This repo is to practice IaC with version control using Git and terraform.
