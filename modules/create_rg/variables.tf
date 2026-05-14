@@ -1,22 +1,8 @@
-variable "rg_name" {
-    description = "Name of the resource group"
-    type        = string
-    }
-
-variable "location" {
-    description = "Location of the resource group"
-    type        = string
-    }
-
-variable "tags" {
-    description = "Tags to be applied to the resource group"
-    type        = map(string)
-    default     = {
-        Environment = var.environment
-        Owner       = var.owner
-        Project_name= var.project_name
-        Billing_level= var.billing_level
-        Billing_contact= var.billing_contact
-        cost_center= var.cost_center
-    }
-}
+variable "rg_name"         { type = string }
+variable "location"        { type = string }
+variable "environment"     { type = string }
+variable "owner"           { type = string }
+variable "project_name"    { type = string }
+variable "billing_level"   { type = string }
+variable "billing_contact" { type = string }
+variable "cost_center"     { type = string }
